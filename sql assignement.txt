@@ -1,0 +1,31 @@
+1)SELECT eName, sal
+FROM employees
+WHERE sal >= 220;
+
+2)SELECT *
+FROM employees
+WHERE commission IS NULL OR commission = 0;
+
+3)SELECT eName, sal
+FROM employees
+WHERE sal NOT BETWEEN 4000 AND 2500;
+
+4)SELECT name, jobtitle, salary
+FROM employees
+WHERE manager_id IS NULL;
+
+5)SELECT name
+FROM employees
+WHERE name LIKE '__A%';
+
+6)SELECT name
+FROM employees
+WHERE name LIKE '__T%';4
+
+7)INSERT INTO employees (empcode, empname,empage,esalary)
+VALUES 
+(101, 'Jenny',25, 10000),
+(102, 'Jacky',30, 20000),
+(103, 'Joe',20, 40000),
+(104, 'John',40, 80000),
+(105, 'Shameer',40, 90000);
